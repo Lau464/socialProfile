@@ -1,0 +1,109 @@
+/* Custom properties*/
+
+:root {
+
+    /* colors */
+    --verde: hsl(75, 94%, 57%);
+    --blanco: hsl(0, 0%, 100%);
+    
+    --gris1: hsl(0, 0%, 20%);
+    --gris2: hsl(0, 0%, 12%);
+    --gris3: hsl(0, 0%, 8%);
+
+    /* fonts */
+
+    --fuente: "Inter", sans-serif;
+}
+
+/* globals */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuente);
+    background-color: var(--gris3);
+    font-size: 1.4rem;
+    color: var(--blanco);
+}
+
+
+.contenedor {
+    background-color: var(--gris2);
+    margin: 10rem auto 8rem auto;
+    max-width: 35rem;
+    width: 90%;
+    text-align: center;
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 30%;
+    max-width: 12rem;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+h2 {
+    color: var(--verde);
+    font-size: 1.2rem;
+    margin-top: .5rem;
+}
+
+blockquote {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 2rem 0;
+}
+
+
+.enlaces {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.enlaces a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--blanco);
+    margin-bottom: 1rem;
+    padding: 1.5rem 0;
+    background-color: var(--gris1);
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition-property: background-color color;
+    transition-duration: 0.3s;
+}
+
+.enlaces a:hover {
+    background-color: var(--verde);
+    color: var(--gris3);
+}
+
+/* footer */
+.footer {
+    font-size: 1.1rem; 
+    text-align: center; 
+}
+
+.footer a { color: hsl(228, 45%, 44%); }
+
