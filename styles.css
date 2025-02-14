@@ -27,6 +27,12 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
     font-family: var(--fuente);
     background-color: var(--gris3);
     font-size: 1.4rem;
@@ -36,7 +42,6 @@ body {
 
 .contenedor {
     background-color: var(--gris2);
-    margin: 10rem auto 8rem auto;
     max-width: 35rem;
     width: 90%;
     text-align: center;
